@@ -19,12 +19,10 @@ class SingletonDB {
 function clientCode() {
     const s1 = SingletonDB.getInstance();
     const s2 = SingletonDB.getInstance();
-
     if (s1 === s2) {
-        console.log('Singleton works, both variables contain the same instance.');
+        console.log('This Singleton exemple works comproving that both variables contain the same instance.');
     } else {
         console.log('Singleton failed, variables contain different instances.');
     }
 }
-
 clientCode();
