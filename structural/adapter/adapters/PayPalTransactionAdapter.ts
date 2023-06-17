@@ -15,11 +15,11 @@ export default class PayPalTransactionAdapter implements Transaction {
     convertStatus(status: string): string {
         switch (status) {
             case "P": 
-                return "waiting_payment";
-            case "S":
-                return "paid";
-            case "F":
-                return "refunded";
+                return "esperando_pagamento";
+            case "P":
+                return "pago";
+            case "D":
+                return "devolveu";
             default:
                 return "";
         }
